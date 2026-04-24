@@ -1,0 +1,41 @@
+{
+  "name": "terminal-math-typesetter",
+  "version": "0.1.0",
+  "description": "Render LaTeX-like math inside arbitrary terminal text as beautiful Unicode/ASCII.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepublishOnly": "npm run build && npm test"
+  },
+  "keywords": [
+    "latex",
+    "math",
+    "terminal",
+    "typesetter",
+    "unicode",
+    "ascii",
+    "markdown",
+    "tui",
+    "cli"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.5.0",
+    "vitest": "^2.0.0"
+  }
+}
